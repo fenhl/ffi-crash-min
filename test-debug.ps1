@@ -1,6 +1,6 @@
 Set-Location .\rust
-cargo build --release
+cargo build
 Set-Location ..\csharp
-Copy-Item ..\rust\target\release\fficrashlib.dll fficrashlib.dll
+Copy-Item ..\rust\target\debug\fficrashlib.dll fficrashlib.dll
 dotnet run --configuration=Release
 Set-Location ..
